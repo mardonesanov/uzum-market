@@ -103,7 +103,7 @@
             overflow: hidden;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             z-index: 1070;
-            height: 100%; /* To make all cards the same height */
+            height: 100%;
             display: flex;
             flex-direction: column;
         }
@@ -114,8 +114,8 @@
         .card-img-top {
             border-top-left-radius: 15px;
             border-top-right-radius: 15px;
-            height: 250px; /* Set a fixed height for the images */
-            object-fit: cover; /* Ensures that images fill the box and keep the aspect ratio */
+            height: 250px;
+            object-fit: cover;
             transition: transform 0.3s ease;
         }
         .card:hover .card-img-top {
@@ -307,17 +307,16 @@
         }
     }
     function filterByCategory(category) {
-        console.log("Tanlangan kategoriya: " + category); // Tanlangan kategoriya qiymatini tekshirish uchun
+        console.log("Tanlangan kategoriya: " + category);
         var products = document.getElementsByClassName("product-item");
 
-        // Har bir mahsulotning kategoriyasini tekshirish va filtrlash
         for (var i = 0; i < products.length; i++) {
             var productCategory = products[i].getAttribute("data-category").toLowerCase().trim();
-            console.log("Mahsulot kategoriya: " + productCategory); // Mahsulot kategoriyasini konsolda ko'rsatish
+            console.log("Mahsulot kategoriya: " + productCategory);
             if (category === "" || productCategory === category.toLowerCase().trim()) {
-                products[i].style.display = "block";  // Mos keladigan mahsulotlar ko'rsatiladi
+                products[i].style.display = "block";
             } else {
-                products[i].style.display = "none";  // Mos kelmaydigan mahsulotlar yashiriladi
+                products[i].style.display = "none";
             }
         }
     }

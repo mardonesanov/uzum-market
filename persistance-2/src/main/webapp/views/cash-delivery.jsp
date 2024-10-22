@@ -109,7 +109,7 @@
             position: relative;
         }
         h2::before {
-            content: "\f155"; /* FontAwesome icon for cash register */
+            content: "\f155";
             font-family: "Font Awesome 6 Free";
             font-weight: 900;
             position: absolute;
@@ -183,7 +183,7 @@
     </style>
 </head>
 <body>
-<div class="background"></div> <!-- Orqa fon rasmini blur bilan qo'shish -->
+<div class="background"></div>
 <div class="container animate__animated animate__fadeInUp">
     <h2 class="text-center mb-4"><i class="fas fa-hand-holding-usd"></i> Naqd To'lov</h2>
     <div class="product-list">

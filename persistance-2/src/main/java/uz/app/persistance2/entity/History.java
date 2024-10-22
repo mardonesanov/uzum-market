@@ -29,10 +29,10 @@ public class History {
     private Date purchaseDate;
 
     @Column(name = "delivery_address", nullable = false)
-    private String deliveryAddress;  // Added delivery address field
+    private String deliveryAddress;
 
     public History() {
-        this.purchaseDate = new Date(); // Set purchase date to current date
+        this.purchaseDate = new Date();
     }
 
     // Getters and Setters

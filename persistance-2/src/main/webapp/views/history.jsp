@@ -14,15 +14,15 @@
       background-repeat: no-repeat;
       margin: 0;
       padding: 0;
-      color: #000; /* Shrift rangi qora */
+      color: #000;
     }
 
     h2 {
       text-align: center;
       margin: 20px 0;
-      color: #000; /* Shrift rangi qora */
+      color: #000;
       font-size: 32px;
-      text-shadow: none; /* Matn soyasini olib tashladim */
+      text-shadow: none;
     }
 
     .container {
@@ -44,7 +44,7 @@
     th, td {
       padding: 15px;
       text-align: left;
-      color: #000; /* Shrift rangi qora */
+      color: #000;
     }
 
     th {

@@ -103,7 +103,7 @@
     </style>
 </head>
 <body>
-<div class="background"></div> <!-- Orqa fon rasmini blur bilan qo'shish -->
+<div class="background"></div>
 <div class="container animate__animated animate__fadeInUp">
     <h2 class="text-center mb-4">
         <i class="fas fa-credit-card header-icon"></i> To'lov Usulini Tanlang

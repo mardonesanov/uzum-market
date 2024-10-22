@@ -94,7 +94,6 @@
 </div>
 <script>
     document.querySelector('form').addEventListener('submit', function() {
-        // Reload image preview and category in products.jsp after updating
         const imageUrl = document.getElementById('imageUrl').value;
         const category = document.getElementById('category').value;
         sessionStorage.setItem('updatedImageUrl', imageUrl);

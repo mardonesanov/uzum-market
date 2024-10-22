@@ -35,17 +35,15 @@ public class CheckoutServlet extends HttpServlet {
 
         String deliveryAddress = request.getParameter("deliveryAddress");
         if (deliveryAddress == null || deliveryAddress.isEmpty()) {
-            deliveryAddress = "No address provided"; // Agar manzil kiritilmasa
+            deliveryAddress = "No address provided";
         }
 
         savePurchaseHistory(user, cartItems, deliveryAddress);
 
-        // Savatni tozalash va ma'lumotlar bazasidan o'chirish
         clearUserCart(session, user);
         session.removeAttribute("cartItems_" + user.getId());
         deleteCartItemsFromDatabase(user);
 
-        // Xarid muvaffaqiyatli yakunlanganligini bildirish sahifasiga yo'naltirish
         response.sendRedirect(request.getContextPath() + "/views/payment-method.jsp");
     }
 

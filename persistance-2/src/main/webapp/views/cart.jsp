@@ -33,11 +33,11 @@
             padding: 5px 15px;
         }
         .cart-title-icon {
-            color: #6c63ff; /* Zamonaviy rang */
+            color: #6c63ff;
             font-size: 2rem;
         }
         .table-icon {
-            color: #ff6f61; /* Zamonaviy rang */
+            color: #ff6f61;
             margin-right: 5px;
         }
         .action-buttons button {

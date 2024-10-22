@@ -23,7 +23,7 @@
             height: 100%;
             background: url('https://4kwallpapers.com/images/walls/thumbs_3t/8324.png') no-repeat center center fixed;
             background-size: cover;
-            filter: blur(5px); /* Blur effekti qo'shildi */
+            filter: blur(5px);
             z-index: -1;
         }
         .container {
@@ -32,7 +32,7 @@
             box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
             animation: fadeInUp 1s ease-in-out;
             z-index: 1;
-            background: rgba(255, 255, 255, 0.1); /* Ozgina shaffof oq fon */
+            background: rgba(255, 255, 255, 0.1);
         }
         .btn-primary {
             background: #007bff;
@@ -45,21 +45,21 @@
         }
         .form-label {
             font-weight: bold;
-            color: #ffeb3b; /* Yorqin sariq rang */
+            color: #ffeb3b;
         }
         .form-control {
-            border: 2px solid #ffeb3b; /* Yorqin chegara rangi */
-            color: #ffffff; /* Oq rangdagi matn */
-            background: rgba(255, 255, 255, 0.1); /* Biroz shaffof oq fon */
+            border: 2px solid #ffeb3b;
+            color: #ffffff;
+            background: rgba(255, 255, 255, 0.1);
         }
         .form-control::placeholder {
-            color: #fdd835; /* Yorqin sariq rangdagi placeholder */
+            color: #fdd835;
         }
         .fas {
-            color: #ffffff; /* Ikonkalarga oq rang */
+            color: #ffffff;
         }
         h2 {
-            color: #ffffff; /* Sign In sarlavhasiga oq rang */
+            color: #ffffff;
         }
         @keyframes fadeInUp {
             from {
@@ -74,7 +74,7 @@
     </style>
 </head>
 <body>
-<div class="background"></div> <!-- Blur effekti qo'shilgan orqa fon -->
+<div class="background"></div>
 <div class="container animate__animated animate__fadeInUp">
     <h2 class="text-center mb-4"><i class="fas fa-sign-in-alt"></i> Sign In</h2>
     <form action="signin" method="post" class="w-50 mx-auto">

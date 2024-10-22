@@ -23,7 +23,7 @@ public class ProductServlet extends HttpServlet {
             request.setAttribute("products", products);
             request.getRequestDispatcher("/views/products.jsp").forward(request, response);
         } catch (Exception e) {
-            e.printStackTrace(); // Yoki logging kutubxonasi orqali
+            e.printStackTrace();
             response.sendRedirect("views/error.jsp");
         } finally {
             em.close();
@@ -44,7 +44,7 @@ public class ProductServlet extends HttpServlet {
                         cart = new ArrayList<>();
                         request.getSession().setAttribute("cart", cart);
                     }
-                    cart.add(product); // Mahsulotni savatchaga qo'shish
+                    cart.add(product);
                 }
                 em.getTransaction().commit();
                 response.getWriter().write("Mahsulot muvaffaqiyatli savatchaga qo'shildi."); // Foydalanuvchiga xabar berish
@@ -52,7 +52,7 @@ public class ProductServlet extends HttpServlet {
                 if (em.getTransaction().isActive()) {
                     em.getTransaction().rollback();
                 }
-                e.printStackTrace(); // Yoki logging kutubxonasi orqali
+                e.printStackTrace();
                 response.setStatus(HttpServletResponse.SC_INTERNAL_SERVER_ERROR);
                 response.getWriter().write("Xato: Mahsulotni qo'shishda muammo yuz berdi.");
             } finally {
